@@ -177,3 +177,5 @@ buildNumber.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,macos,maven
 {"mode":"full","isActive":false}
+
+src/main/resources/data/
