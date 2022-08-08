@@ -88,7 +88,7 @@ public class MaxAreaOfIsland105 {
 
                     }
 
-                    biggestSum = Math.max(sum,biggestSum);
+
 
                 }
 
