@@ -32,7 +32,7 @@ public class SmallestSubsequence1081 {
         }
 
         StringBuilder sb = new StringBuilder(stack.size());
-        for (Character c : stack) sb.append(c.charValue());6
+        for (Character c : stack) sb.append(c.charValue());
                 
         return sb.toString();
     }
