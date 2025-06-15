@@ -22,14 +22,10 @@ public class Bag<T> implements Iterable<T> {
 
     public void add(T item){
         Node<T> node = new Node<T>();
-
         node.setValue(item);
         node.setNext(this.first);
-
         this.first = node;
-
         capacity++;
-
     }
 
 
@@ -53,18 +49,14 @@ public class Bag<T> implements Iterable<T> {
             if (current != null){
                 return true;
             }
-
             return false;
         }
 
-
         @Override
         public T next() {
-
             if (!hasNext()){
                 throw new NoSuchElementException();
             }
-
             T item = current.getValue();
             current = current.getNext();
             return item;

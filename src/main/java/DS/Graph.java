@@ -40,8 +40,6 @@ public class Graph {
 
     }
 
-
-
     public void addEdge(int v,int w){
         adj[v].add(w);
         adj[w].add(v);
@@ -61,8 +59,4 @@ public class Graph {
         return E;
     }
 
-    public static void main(String[] args) {
-        Graph graph = new Graph(new In("/Users/jack/Desktop/leecode/src/main/java/DS/graph.txt"));
-        System.out.println(graph);
-    }
 }

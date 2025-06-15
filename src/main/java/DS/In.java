@@ -1,9 +1,8 @@
 package DS;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.net.URI;
+import java.net.URL;
 import java.util.Scanner;
 
 /**
@@ -15,14 +14,9 @@ public class In {
     private Scanner scanner;
 
     public In(String path){
-        try {
-            FileInputStream fin = new FileInputStream(path);
-            InputStreamReader reader = new InputStreamReader(fin);
-            this.scanner =  new Scanner( new BufferedReader(reader));
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
+        InputStream is = getClass().getClassLoader().getResourceAsStream(path);
+        InputStreamReader reader = new InputStreamReader(is);
+        this.scanner =  new Scanner( new BufferedReader(reader));
     }
 
     public int nextInt(){
