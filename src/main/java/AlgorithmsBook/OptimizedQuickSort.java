@@ -1,7 +1,5 @@
 package AlgorithmsBook;
 
-import edu.princeton.cs.algs4.StdRandom;
-
 import java.util.function.Consumer;
 
 public class OptimizedQuickSort extends SortTemplate implements Consumer<Comparable[]> {

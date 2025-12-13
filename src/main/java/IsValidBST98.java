@@ -1,5 +1,3 @@
-import edu.princeton.cs.algs4.Stack;
-
 public class IsValidBST98 {
     public boolean isValidBST(TreeNode root) {
         return dfs(root, Long.MIN_VALUE, Long.MAX_VALUE);

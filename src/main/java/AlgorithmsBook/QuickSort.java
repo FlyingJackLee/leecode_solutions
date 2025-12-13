@@ -1,8 +1,6 @@
 package AlgorithmsBook;
 
-import edu.princeton.cs.algs4.StdRandom;
 
-import javax.sound.midi.MidiFileFormat;
 import java.util.function.Consumer;
 
 public class QuickSort extends SortTemplate implements Consumer<Comparable[]> {
