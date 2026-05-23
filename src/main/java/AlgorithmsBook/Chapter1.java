@@ -1,9 +1,5 @@
 package AlgorithmsBook;
 
-import edu.princeton.cs.algs4.BinarySearch;
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -85,11 +81,4 @@ public class Chapter1 {
         return cnt;
 
     }
-
-    public static void main(String[] args) {
-
-        int[] test = In.readInts(Chapter1.class.getClassLoader().getResource("data/4Kints.txt").getPath());
-        StdOut.println(threeSum(test));
-    }
-
 }

@@ -1,6 +1,4 @@
 package AlgorithmsBook;
-import edu.princeton.cs.algs4.StdDraw;
-
 import java.awt.*;
 import java.util.function.Consumer;
 
